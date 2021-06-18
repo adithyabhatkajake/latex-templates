@@ -1,0 +1,77 @@
+\usepackage[utf8]{inputenc}
+% \ifsubmission
+% Refer https://tex.stackexchange.com/questions/43835/conflict-between-amsthm-and-some-other-package for the conflict between lncs and amsthm
+% \let\proof\relax
+% \let\endproof\relax
+% \fi
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage[algoruled,linesnumbered,vlined,noend]{algorithm2e}
+\SetNlSty{text}{}{:}
+	\SetKwComment{Comment}{$\triangleright$\ }{}
+\usepackage{graphicx}
+% For column type X
+\usepackage{tabularx}
+% For \toprule, \midrule and \bottomrule
+\usepackage{booktabs}
+% For the tickmarks and crosses
+\usepackage{pifont}
+\usepackage{paralist}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage[font=small,skip=2pt, belowskip=-2pt]{caption}
+\usepackage{mwe}
+
+\usepackage{textcomp}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{boxedminipage}
+\usepackage{xcolor}
+\usepackage{xspace}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,decorations.pathmorphing,decorations.footprints,fadings,calc,trees,mindmap,shadows,decorations.text,patterns,positioning,shapes,matrix,fit}
+
+%\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+	%T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% To allow enumerate[i], enumerate[I], etc
+\usepackage[inline]{enumitem}
+\usepackage{thmtools}
+\usepackage[english]{babel}
+\usepackage[capitalize,noabbrev]{cleveref}
+\usepackage{float}
+\usepackage{capt-of}
+\usepackage{url}
+% This hack is for long URLs
+\def\UrlBreaks{\do\/\do-}
+% \usepackage{balance}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{decorations.pathreplacing, calligraphy} % For fancy braces
+\usetikzlibrary{shapes,shapes.geometric,shapes.symbols,arrows}
+\usetikzlibrary{matrix,fit}
+\tikzstyle{block} = [rectangle, draw, text width=5em, 
+                     text centered, rounded corners, 
+                     minimum height=4em, node distance=3cm]
+\tikzstyle{sqblock} = [rectangle, draw, text width=5em, 
+                     text centered, 
+                     minimum height=4em, node distance=3cm]
+\tikzstyle{process} = [circle, draw, text width=1em, 
+                     text centered, rounded corners, 
+                     minimum height=1em, node distance=3cm]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{bubble} = [cloud, draw, text width=1em, 
+                     text centered, rounded corners, 
+                     minimum height=1em, node distance=3cm]
+
+
+% To leave comments across the document.
+\usepackage[nomargin]{fixme}
+\usepackage{ifthen}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{fact}[theorem]{Fact}

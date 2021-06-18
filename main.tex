@@ -1,0 +1,80 @@
+% Variables
+\newif\ifdraft
+
+% Checklist before submission
+% 1. Make sure draft = false
+% 2. Make sure full  = false
+% 3. Make sure submission = true
+% 4. Make sure the content is within 12 pages
+% 5. Make sure all the figures are correct
+% 6. Make sure all the tables are correct
+% 7. Upload Full version to drive
+% 8. Ensure that the link for the full version works
+% 9. Remove over-box full errors as much as possible
+% 10. Run VSCode/Emacs-Spellcheck to ensure that there are no errors
+
+%%% ==================
+%%% SUBMISSION DETAILS
+%%% ==================
+%%% Call: https://www.sigsac.org/ccs/CCS2021/call-for-papers.html
+%%% Page limits: 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material
+%%% ==================
+\documentclass[sigconf]{acmart}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{} 
+\pagestyle{plain}
+%\fancyhf{} % Remove fancy page headers 
+%\fancyhead[C]{Anonymous submission \#9999 to ACM CCS 2021} 
+% TODO: replace 9999 with your paper number
+%\fancyfoot[C]{\thepage}
+
+%\setcopyright{none} % No copyright notice required for submissions
+%\acmConference[Anonymous Submission to ACM CCS 2021]
+%\acmConference[]{}{}
+%{ACM Conference on Computer and Communications Security}
+%{Due 14 Nov 2021}{TBD}
+%\acmYear{2021}
+
+%\settopmatter{printacmref=false, printccs=true, printfolios=true} % We want page numbers on submissions
+
+%%\ccsPaper{9999} % TODO: replace with your paper number once obtained
+\usepackage[utf8]{inputenc}
+
+\input{common-latex/macro}
+\input{extras/macro}
+
+\input{common-latex/packages}
+\input{extras/packages}
+
+
+\title{TITLE HERE}
+
+\begin{document}
+\fancyhead{}
+\input{abstract}
+
+\settopmatter{printfolios=true}
+\maketitle
+
+\thispagestyle{empty}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references, crypto, randomBeaconProtocol, rand}
+
+\appendix
+
+\end{document}
+%% TODO %%
+% List of things that are needed for the CCS submission:
+% 1) Reconfiguration
+% 	a) model
+% 	b) protocol for adding/replacing nodes in place
+% 	c) security proofs
+% 2) Experiments
+% 	a) Micro benchmarks of crypto and extension schemes
+% 	b) Protocol performance for type 1
+% 	c) Protocol performance for type 2
+% 	d) Protocol performance for Drand
+% 	[Above needs more details, this is just an outline]
+% 3) PVSS vs. VSS (and our positioning)
+% === Please suggest more, I will add all of these as todos in main.tex ===

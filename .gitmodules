@@ -1,0 +1,3 @@
+[submodule "common-latex"]
+	path = common-latex
+	url = https://github.com/adithyabhatkajake/common-latex.git
